@@ -5,17 +5,56 @@
     <title>Table</title>
 </head>
 <style>
-    table, th, td {
+    table, th {
         border: 2px solid black;
-    }
-    h1,h2{
-        text-align: center;
     }
     p{
         line-height:60%;
     }
 </style>
 <body>
-<h1></h1>
+<table width="90%">
+    <thead>
+      <tr>
+          <th colspan="4" style="background: blue">
+             <h1>MY FIRST TABLE</h1>
+          </th>
+      </tr>
+    </thead>
+      <tr>
+          <th style="background: blue">
+              <h2>First cell</h2>
+          </th>
+          <th style="background: blue">
+              <h2>Second cell</h2>
+          </th>
+          <th rowspan="3" style="background: yellow">
+              <h2>6 sells merged together</h2>
+          </th>
+      </tr>
+      <tr>
+          <th colspan="2"style="background: yellow">
+              <h2>2 cell merged into one</h2>
+          </th>
+      </tr>
+      <tr>
+          <th style="background: yellow">
+           <p><h2>1st cell<br>3rd row</h2>
+           </p>
+          </th>
+          <th style="background: yellow">
+             <p>
+              <h2>2nd cell<br>3rd row</h2>
+              </p>
+          </th>
+      </tr>
+    <tfoot>
+      <tr>
+          <th colspan="4" style="background: yellow">
+              <h2>Do you like table ?</h2>
+          </th>
+      </tr>
+    </tfoot>
+</table>
 </body>
 </html>
